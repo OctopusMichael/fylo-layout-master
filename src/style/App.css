@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --veryDarkBlue: #070439;
+  --desaturatedBlue: #585989;
+  --brightBlue: #3065f8;
+  --moderateCyan: #3c9f8f;
+  --lightGrayishBlue: #f6f6fe;
+  --lightGray: #bfbfbf;
+
+  /* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+h1{
+  
+  font-family: 'Raleway', sans-serif;
+}
+
+p{
+  
+  font-family: 'Open Sans', sans-serif ;
+}
+
+
+
+
+#content {
+  background-image: url(../images/bg-curve-mobile.svg),
+    linear-gradient(0deg, var(--lightGrayishBlue) 95%, rgba(0, 0, 0, 0) 0%);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#card {
+  background-image: url(../images//icon-quotes.svg);
+  background-position: 8% 15%;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+
+@media only screen and (min-width : 1300px) {
+
+
+ #content {
+  background-image: url(../images/bg-curve-desktop.svg),
+    linear-gradient(0deg, var(--lightGrayishBlue) 90%, rgba(0, 0, 0, 0) 0%);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#card {
+  background-image: url(../images//icon-quotes.svg);
+  background-position: 10% 15%;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+}
