@@ -6,7 +6,9 @@ import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="  bg-veryDarkBlue text-white px-[20px] md:px-[80px] py-[90px] 2xl:px-[150px]   flex flex-col">
+      <footer className="  bg-veryDarkBlue">
+        <section className="max-w-[1440px] mx-auto text-white px-[20px] md:px-[80px] py-[90px]    flex flex-col">
+
         <div>
           <img className=" h-[40px] " src={logoFooter} alt="logo" />
         </div>
@@ -78,6 +80,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        </section>
       </footer>
     </>
   );

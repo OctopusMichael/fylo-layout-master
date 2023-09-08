@@ -12,7 +12,7 @@ const Hero = () => {
   const err = useErrContext();
 
   return (
-    <section className="h-auto md:h-auto px-[40px] md:px-[80px] 2xl:px-[150px] md:py-[200px]  text-center md:text-start flex flex-col  lg:flex-row  ">
+    <section className="h-auto mb-[150px] md:mb-[0px]  px-[40px] md:px-[80px]  md:py-[200px]  text-center md:text-start flex flex-col  lg:flex-row max-w-[1440px] mx-auto ">
       <div className="md:order-2 ">
         <img
           className="pt-[150px] md:pt-[0px] pb-[50px] md:pb-[0px] mx-auto md:my-[100px] lg:my-[0px] md:h-[500px] lg:h-auto"
@@ -43,7 +43,7 @@ const Hero = () => {
               type="text"
               placeholder="Enter your email"
             />
-            {err == true && (
+            {err  && (
               <p className=" text-[12px] text-start mt-[10px] text-rose-500">
                 Please Check Your Email
               </p>
